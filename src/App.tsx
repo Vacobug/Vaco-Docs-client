@@ -1,13 +1,11 @@
 import React from "react";
 
-import HelloWorld from "./components/HelloWorld";
-import Button from "./components/Button/index";
+import TopNavbar from "./components/TopNavbar";
 
 function App() {
   return (
     <div>
-      <HelloWorld />
-      <Button buttonTitle="버튼" handleClick={() => console.log(1)} />
+      <TopNavbar />
     </div>
   );
 };

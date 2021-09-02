@@ -1,5 +1,4 @@
-
-body {
-  color: #1ee0e0;
-  background-color: #120e26;
+body, #root {
+  margin: 0;
+  padding: 0;
 }

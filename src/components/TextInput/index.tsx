@@ -1,14 +1,23 @@
 import React, { ChangeEvent } from "react";
+import styled from "styled-components";
 
-interface TextInputProps {
+const StyledTextInput = styled.input`
+  width: 30%;
+  padding: 1.5em;
+  background-color: #F0F3F4;
+  border-radius: 7px;
+  border: none;
+`;
+
+export interface TextInputProps {
   placeholder: string;
   text: string;
   handleTextChange: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
-function TextInput({ placeholder, text, handleTextChange }: TextInputProps) {
+export function TextInput({ placeholder, text, handleTextChange }: TextInputProps) {
   return (
-    <input
+    <StyledTextInput
       type="text"
       value={text}
       placeholder={placeholder}
@@ -16,5 +25,3 @@ function TextInput({ placeholder, text, handleTextChange }: TextInputProps) {
     />
   );
 }
-
-export default TextInput;
