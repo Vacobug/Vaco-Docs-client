@@ -8,28 +8,28 @@ export interface templateType {
 
 export const templates = [
   {
-    templateName: "none",
+    templateName: "none" as const,
     templateImageURL: "none_url",
     description: "내용 없음"
   },
   {
-    templateName: "report",
+    templateName: "none" as const,
     templateImageURL: "report_url",
     description: "보고서"
   },
   {
-    templateName: "resume",
+    templateName: "none" as const,
     templateImageURL: "resume_url",
     description: "이력서"
   },
   {
-    templateName: "proposal",
+    templateName: "none" as const,
     templateImageURL: "proposal_url",
     description: "서신"
   },
   {
-    templateName: "letter",
+    templateName: "none" as const,
     templateImageURL: "letter_url",
     description: "편지"
-  },
+  }
 ];
