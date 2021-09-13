@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { AiOutlineSearch } from "react-icons/ai";
 
 import TextInputWithIcon from "../TextInput/TextInputWithIcon";
+import HamburgerButton from "../HamburgerButton";
 
 const StyledNavbar = styled.article`
   display: flex;
@@ -20,6 +21,8 @@ function TopNavbar() {
 
   return (
     <StyledNavbar>
+      <HamburgerButton />
+
       <TextInputWithIcon
         text={text}
         placeholder="검색"
